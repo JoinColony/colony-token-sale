@@ -10,6 +10,7 @@ import { decodeSymbol } from '@gnosis.pm/dex-js'
 
 // assets
 import { SwitcherSVG } from 'assets/img/SVG'
+import colonyLogoFull from 'assets/img/logo-full.svg'
 
 // const, types
 import { ZERO } from 'const'
@@ -568,6 +569,10 @@ const TradeWidget: React.FC = () => {
               <br />
             </>
           )}
+          {console.log(colonyLogoFull)}
+          <div className="colonyBranding">
+            <img src={colonyLogoFull} className="colonyBrandingLogo" alt="Colony" />
+          </div>
           <TokenRow
             autoFocus
             selectedToken={sellToken}

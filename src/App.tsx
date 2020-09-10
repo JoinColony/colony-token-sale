@@ -13,38 +13,10 @@ import GlobalStyles from 'styles/global'
 import Layout from 'components/Layout'
 
 // Pages
-const About = React.lazy(() =>
-  import(
-    /* webpackChunkName: "Extra_routes_chunk"*/
-    'pages/About'
-  ),
-)
-
 const Trade = React.lazy(() =>
   import(
     /* webpackChunkName: "Trade_chunk"*/
     'pages/Trade'
-  ),
-)
-
-const Trades = React.lazy(() =>
-  import(
-    /* webpackChunkName: "Trade_chunk"*/
-    'pages/Trades'
-  ),
-)
-
-const Strategies = React.lazy(() =>
-  import(
-    /* webpackChunkName: "Strategies_chunk"*/
-    'pages/Strategies'
-  ),
-)
-
-const Orders = React.lazy(() =>
-  import(
-    /* webpackChunkName: "Orders_chunk"*/
-    'pages/Orders'
   ),
 )
 
@@ -67,25 +39,6 @@ const ConnectWallet = React.lazy(() =>
     'pages/ConnectWallet'
   ),
 )
-const FAQ = React.lazy(() =>
-  import(
-    /* webpackChunkName: "Extra_routes_chunk"*/
-    'pages/FAQ'
-  ),
-)
-const OrderBook = React.lazy(() =>
-  import(
-    /* webpackChunkName: "OrderBook_chunk"*/
-    'pages/OrderBook'
-  ),
-)
-const Settings = React.lazy(() =>
-  import(
-    /* webpackChunkName: "Settings_chunk"*/
-    'pages/Settings'
-  ),
-)
-
 // Global State
 import { withGlobalContext } from 'hooks/useGlobalState'
 import { rootReducer, INITIAL_STATE } from 'reducers-actions'
@@ -113,16 +66,9 @@ const App: React.FC = () => (
       <Layout>
         <React.Suspense fallback={null}>
           <Switch>
-            <PrivateRoute path="/orders" exact component={Orders} />
             <Route path="/trade/:buy-:sell" component={Trade} />
-            <PrivateRoute path="/liquidity" exact component={Strategies} />
             <PrivateRoute path="/wallet" exact component={Wallet} />
-            <Route path="/about" exact component={About} />
-            <Route path="/faq" exact component={FAQ} />
-            <Route path="/book" exact component={OrderBook} />
             <Route path="/connect-wallet" exact component={ConnectWallet} />
-            <Route path="/trades" exact component={Trades} />
-            <Route path="/settings" exact component={Settings} />
             <Redirect from="/" to={initialUrl} />
             <Route component={NotFound} />
           </Switch>

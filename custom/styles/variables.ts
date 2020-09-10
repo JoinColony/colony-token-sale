@@ -180,6 +180,19 @@ const variables = css`
   body.dark-theme {
     ${DarkColors}
   }
+
+  .colonyBranding {
+    background-color: #ffffff;
+    padding: 30px 0 30px;
+    text-align: center;
+    margin: -1.6rem;
+    margin-bottom: 25px;
+    border-top-left-radius: 0.6rem;
+  }
+
+  .colonyBrandingLogo {
+    max-width: calc(100% - 340px);
+  }
 `
 
 export default variables
