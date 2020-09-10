@@ -5,6 +5,7 @@ import { formatSeconds, dateToBatchId } from 'utils'
 
 // Components
 import UserWallet from 'components/UserWallet'
+import CountdownTimer from 'components/CountdownTimer';
 
 // Header: Subcomponents
 import { NavigationLinks } from 'components/Layout/Header/Navigation'
@@ -84,6 +85,7 @@ const Header: React.FC<HeaderProps> = ({ navigation: initialState }: HeaderProps
           {/* Global Batch Countdown */}
           <BatchCountDown />
         </TopWrapper>
+        <CountdownTimer />
         {/* HEADER LINKS */}
         <NavigationLinks
           navigation={navigationArray}

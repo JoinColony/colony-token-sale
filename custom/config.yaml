@@ -7,6 +7,9 @@ name: Colony Token Sale Portal
 # Logo used for the favicon
 logoPath: './custom/assets/img/logo.svg'
 
+# Custom config value: Epoch formatted timestamp in the future
+countTimestamp: 1599917800473
+
 # Whitelisted tokens from Gnosis Contract retrieved from a smart contract
 tcr:
   type: 'multi-tcr' # choices: multi-tcr | none

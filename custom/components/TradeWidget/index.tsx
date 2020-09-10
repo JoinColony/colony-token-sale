@@ -569,7 +569,6 @@ const TradeWidget: React.FC = () => {
               <br />
             </>
           )}
-          {console.log(colonyLogoFull)}
           <div className="colonyBranding">
             <img src={colonyLogoFull} className="colonyBrandingLogo" alt="Colony" />
           </div>

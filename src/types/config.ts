@@ -64,6 +64,7 @@ export interface DisabledTokens {
 
 export interface Config {
   appId: number
+  countTimestamp: number
   name: string
   logoPath: string
   templatePath: string
