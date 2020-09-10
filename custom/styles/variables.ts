@@ -16,18 +16,19 @@ const LightColors = `
   --color-background-lighter: #f7f7f7;
   --color-background-darker: #EDF2F7;
   --color-background: #00284B;
-  --color-background-pageWrapper: #fff;
+  --color-background-pageWrapper: #E9F6FF;
   --color-background-actionCards: #bbfdbb;
   --color-background-highlighted: #fcfde0;
   --color-background-selected: #d9d9d9;
   --color-background-selected-darker: #b6b6b6;
   --color-background-selected-dark: #bfbfbf;
   --color-background-progressBar: lightskyblue;
-  --color-background-input: #e7ecf3;
+  --color-background-input: #ffffff;
+  --color-background-input-readonly: #eeeeee; //#e7ecf3
   --color-background-input-lighter: #ffffff;
   --color-background-validation-warning: #fff0eb;
   --color-background-row-hover: #deeeff;
-  --color-background-CTA: #218DFF;
+  --color-background-CTA: #289BDC;
   --color-background-selection: #218DFF;
   --color-background-button-hover: #0B66C6;
   --color-background-button-disabled-hover: #2772c3;
@@ -39,7 +40,7 @@ const LightColors = `
   // Text
   --color-text-primary: #456483;
   --color-text-secondary: #9FB4C9;
-  --color-text-active: #218DFF;
+  --color-text-active: #289BDC;
   --color-text-alternate: #456483;
   --color-text-CTA: #fff;
   --color-text-selection: #fff;
