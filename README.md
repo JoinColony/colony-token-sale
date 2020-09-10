@@ -1,18 +1,8 @@
-[![npm version](https://img.shields.io/npm/v/@gnosis.pm/dex-react.svg?style=flat)](https://npmjs.org/package/@gnosis.pm/dex-react 'View this project on npm')
-&nbsp;
-[![Build Status](https://travis-ci.org/gnosis/dex-react.svg?branch=develop)](https://travis-ci.org/gnosis/dex-react)
-&nbsp;
-[![Coverage Status](https://coveralls.io/repos/github/gnosis/dex-react/badge.svg?branch=master)](https://coveralls.io/github/gnosis/dex-react?branch=master)
+# Colony Token Sale Portal
 
-Develop:
-&nbsp;
-[![Build Status](https://travis-ci.org/gnosis/dex-react.svg?branch=develop)](https://travis-ci.org/gnosis/dex-react)
-&nbsp;
-[![Coverage Status](https://coveralls.io/repos/github/gnosis/dex-react/badge.svg?branch=develop)](https://coveralls.io/github/gnosis/dex-react?branch=develop)
+A fork of [`gnosis/dex-react`](https://github.com/gnosis/dex-react). See below for the original readme.
 
 # Gnosis Protocol Web
-
-<img align="right" width="350" src="./docs/screenshot.png">
 
 `Gnosis Protocol Web` is the first dapp built on the [Gnosis Protocol](https://docs.gnosis.io/protocol).
 
