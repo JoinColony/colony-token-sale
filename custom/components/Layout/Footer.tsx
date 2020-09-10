@@ -6,7 +6,7 @@ import { MEDIA } from 'const'
 import { depositApi } from 'api'
 
 // Assets
-import verified from 'assets/img/verified.svg'
+import checkCircle from 'assets/img/check-circle.svg'
 import builtOnGP from 'assets/img/builtOnGP.svg'
 
 // Components
@@ -84,13 +84,13 @@ const VerifiedContractLink = styled.div`
   > a {
     height: fit-content;
     margin: auto 0;
-    border-color: #29a745;
+    border-color: #68D2D2;
     white-space: nowrap;
   }
 
   > a:link,
   > a:visited {
-    color: #29a745;
+    color: #68D2D2;
     transition: border-color 0.2s ease-in-out;
   }
 `
@@ -198,12 +198,12 @@ const LinkWrapper = styled(EtherscanLink)`
   align-items: center;
 
   &:hover {
-    border: 0.1rem solid #29a745;
+    border: 0.1rem solid #68D2D2;
   }
 
   &::before {
     content: '';
-    background: url(${verified}) no-repeat center/contain;
+    background: url(${checkCircle}) no-repeat center/contain;
     height: 1.6rem;
     width: 1.6rem;
     display: block;
