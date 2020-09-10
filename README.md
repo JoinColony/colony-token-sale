@@ -2,6 +2,8 @@
 
 A fork of [`gnosis/dex-react`](https://github.com/gnosis/dex-react). See below for the original readme.
 
+![Colony Token Sale](./docs/screenshot-colony-token-sale.png)
+
 # Gnosis Protocol Web
 
 `Gnosis Protocol Web` is the first dapp built on the [Gnosis Protocol](https://docs.gnosis.io/protocol).
