@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 
 import { MEDIA } from 'const'
 import { depositApi } from 'api'
@@ -45,16 +44,21 @@ const Wrapper = styled.footer`
 
 const FooterLinks = styled.div`
   > a {
-    margin: 0 0.5rem;
+    margin: 0 1rem;
+    text-decoration: none;
   }
 
   > a:link,
   > a:visited {
-    font-family: var(--font-weight-normal);
-    font-size: inherit;
-    color: inherit;
-    letter-spacing: -0.03rem;
+    font-weight: var(--font-weight-bold);
+    font-size: 12px;
+    color: #E9F6FF;
   }
+
+  > a:hover {
+    text-decoration: underline;
+  }
+
 `
 
 const BuiltOnGPWrapper = styled.div`
@@ -212,7 +216,6 @@ const LinkWrapper = styled(EtherscanLink)`
 `
 
 const VerifiedText = 'View verified contract'
-const APP_NAME_ABOUT = CONFIG.name.length < 5 ? ' ' + CONFIG.name : ''
 
 const Footer: React.FC = () => {
   const { networkIdOrDefault: networkId } = useWalletConnection()
@@ -230,8 +233,9 @@ const Footer: React.FC = () => {
       </VerifiedContractLink>
       <SideContentWrapper>
         <FooterLinks>
-          <Link to="/about">About{APP_NAME_ABOUT}</Link>
-          <Link to="/faq">FAQ</Link>
+          <a target="_blank" rel="noopener noreferrer" href='https://colony.io'>Website</a>
+          <a target="_blank" rel="noopener noreferrer" href='https://blog.colony.io/'>Blog</a>
+          <a target="_blank" rel="noopener noreferrer" href='https://discord.gg/PDEQvrC'>Discord</a>
         </FooterLinks>
       </SideContentWrapper>
     </Wrapper>
