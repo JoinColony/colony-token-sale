@@ -69,8 +69,8 @@ disabledTokens:
 
 # Initial token selection for the sell token and buy token
 initialTokenSelection:
-  sellToken: DAI
-  receiveToken: USDC
+  sellToken: CLNY
+  receiveToken: DAI
 
 # Initial Token List
 #   List of token loaded by default
@@ -206,3 +206,12 @@ initialTokenList:
     addressByNetwork:
       '1': '0x1A5F9352Af8aF974bFC03399e3767DF6370d82e4'
       '4': '0xa7D1C04fAF998F9161fC9F800a99A809b84cfc9D'
+
+  - id: 99
+    name: Colony Token
+    symbol: CLNY
+    decimals: 18
+    addressByNetwork:
+      # Need actual addresses for the CLNY Token
+      '1': '0x3e828ac5c480069d4765654fb4b8733b910b13b2'
+      '4': '0xc778417E063141139Fce010982780140Aa0cD5Ab'

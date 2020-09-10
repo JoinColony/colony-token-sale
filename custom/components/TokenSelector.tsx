@@ -6,6 +6,8 @@ import { FormatOptionLabelContext } from 'react-select/src/Select'
 
 // assets
 import searchIcon from 'assets/img/search.svg'
+import clnyTokenImage from 'assets/img/clny-logo.png'
+import daiTokenImage from 'assets/img/dai-logo.png'
 
 // const, type, utils
 import { MEDIA } from 'const'
@@ -277,6 +279,17 @@ const stopEnterPropagation: React.KeyboardEventHandler<HTMLDivElement> = (e) => 
 }
 
 const TokenSelector: React.FC<Props> = ({ isDisabled, tokens, selected, onChange, tabIndex = 0 }) => {
+
+  /**
+   * Override CLNY, DAI token images with our custom ones
+  */
+  if (selected.symbol === 'CLNY') {
+    selected.image = clnyTokenImage;
+  }
+  if (selected.symbol === 'DAI') {
+    selected.image = daiTokenImage;
+  }
+
   const options = useMemo(
     () => tokens.map((token) => ({ token, value: `${token.symbol} ${token.address}`, label: token.name })),
     [tokens],
