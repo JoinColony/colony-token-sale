@@ -46,6 +46,7 @@ const LightColors = `
   --color-text-selection: #fff;
   --color-text-button-hover: #fff;
   --color-text-wallet-highlighted: #91D2FA;
+  --color-text-danger: #e5637c;
 
   // Buttons
   --color-button-primary: #000;
