@@ -38,13 +38,14 @@ const LightColors = `
   --color-border: transparent;
 
   // Text
-  --color-text-primary: #456483;
+  --color-text-primary: #2E4153;
   --color-text-secondary: #9FB4C9;
   --color-text-active: #289BDC;
   --color-text-alternate: #456483;
   --color-text-CTA: #fff;
   --color-text-selection: #fff;
   --color-text-button-hover: #fff;
+  --color-text-wallet-highlighted: #91D2FA;
 
   // Buttons
   --color-button-primary: #000;
